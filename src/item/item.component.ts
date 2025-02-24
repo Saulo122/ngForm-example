@@ -14,6 +14,7 @@ export class Item{
     @Input() price!:string;
     @Input() id!:number;
     @Input() type!: string;
+    
     @Output() delete = new EventEmitter();
    
     editable: boolean = false;

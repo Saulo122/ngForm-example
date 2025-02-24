@@ -19,13 +19,13 @@
         }        
     </article>
     <article id = "inputs">
-        <select name="eleccion" id="eleccion" [(ngModel)] = "choice">
+        <select name="eleccion" id="eleccion" [(ngModel)] = "userChoice">
             <option value="cafes">Café</option>
             <option value="postres">Postre</option>
         </select>
-        <input type="text" [(ngModel)] = "name">
-        <input type="text" [(ngModel)] = "price">
-        <button (click) = "addChoice(choice, name, price)">Añadir</button>
+        <input type="text" [(ngModel)] = "itemName">
+        <input type="text" [(ngModel)] = "itemPrice">
+        <button (click) = "addChoice(userChoice, itemName, itemPrice)">Añadir</button>
     </article>
 
 </main>

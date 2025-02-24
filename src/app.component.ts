@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ItemType } from './item/item-type.modul';
 import { Item } from "./item/item.component";
-//Comentario
+
 @Component({
   selector: 'app-root',
   imports: [FormsModule, Item],
@@ -17,12 +17,12 @@ export class AppComponent {
   items: ItemType[] = [];
   desserts: ItemType[] = [];
   
-  addChoice(choice: string, name:string, price:string){
-    if(choice === "cafes"){
-      this.items.unshift({id: Math.floor(Math.random()*1000), name: name, price: price});
+  addChoice(userChoice: string, itemName:string, itemPrice:string){
+    if(userChoice === "cafes"){
+      this.items.unshift({id: Math.floor(Math.random()*1000), name: itemName, price: itemPrice});
     }
-    else if(choice === "postres"){
-      this.desserts.unshift({id: Math.floor(Math.random()*1000), name: name, price: price});
+    else if(userChoice === "postres"){
+      this.desserts.unshift({id: Math.floor(Math.random()*1000), name: itemName, price: itemPrice});
     }
   }
 
