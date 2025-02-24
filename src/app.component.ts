@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ItemType } from './item/item-type.modul';
 import { Item } from "./item/item.component";
-
+//Comentario
 @Component({
   selector: 'app-root',
   imports: [FormsModule, Item],
