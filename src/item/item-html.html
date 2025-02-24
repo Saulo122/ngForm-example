@@ -1,0 +1,15 @@
+<section>
+    @if(editable){
+        <input type="text" [(ngModel)] = "nameItem">
+    }
+    @else {
+        <p class = "item_izquierda">{{nameItem}}</p>
+    }
+    <div class = "item_derecha">
+        <p>{{price}}</p>
+        <button (click) = "deleteItem()">X</button>
+        <button (click) = "toggleEdit()">Edit</button>
+    </div>
+</section>
+
+

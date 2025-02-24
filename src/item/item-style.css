@@ -1,0 +1,16 @@
+section{
+    display:flex;
+    justify-content:space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item_derecha{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.item_derecha button{
+    height:70%;
+}
