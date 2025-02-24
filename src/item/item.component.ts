@@ -21,6 +21,7 @@ export class Item{
     nameItem: string = this.name;
 
     deleteItem(){
+        console.log(this.nameItem, this.name);
         this.delete.emit(this.id);
     }
 
